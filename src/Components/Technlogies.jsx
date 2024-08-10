@@ -4,6 +4,9 @@ import {TbBrandNextjs} from "react-icons/tb"
 import {SiMongodb} from "react-icons/si"
 import {TbBrandMysql} from "react-icons/tb"
 import {FaNodeJs} from "react-icons/fa"
+import {FaPython} from "react-icons/fa"
+import {SiTensorflow} from "react-icons/si"
+import {SiKeras} from "react-icons/si"
 import {animate, motion} from "framer-motion"
 
 const iconVariants = (duration) => ({
@@ -67,6 +70,27 @@ const Technlogies = () => {
             animate = "animate"
             className="rounded-2xl border-4 border-neutral-800 p-4">
                 <FaNodeJs className='text-5xl text-sky-700 '></FaNodeJs>
+            </motion.div>
+            <motion.div 
+            variants={iconVariants(3.5)}
+            initial = "initial"
+            animate = "animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <FaPython className='text-5xl text-red-700 '></FaPython>
+            </motion.div>
+            <motion.div 
+            variants={iconVariants(1.5)}
+            initial = "initial"
+            animate = "animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiTensorflow className='text-5xl text-orange-700 '></SiTensorflow>
+            </motion.div>
+            <motion.div 
+            variants={iconVariants(1.5)}
+            initial = "initial"
+            animate = "animate"
+            className="rounded-2xl border-4 border-neutral-800 p-4">
+                <SiKeras className='text-5xl text-yellow-700 '></SiKeras>
             </motion.div>
         </motion.div>
     </div>
